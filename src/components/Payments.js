@@ -4,7 +4,7 @@ export default function Payments() {
   const [purchases, setPurchases] = useState([]);
   useEffect(() => {
     axios
-      .get("backend-update-production.up.railway.app/api/purchases")
+      .get("https://backend-update-production.up.railway.app/api/purchases")
       .then(function (response) {
         console.log("response: ", response.data);
         setPurchases(response.data);

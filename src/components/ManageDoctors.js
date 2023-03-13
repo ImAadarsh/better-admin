@@ -4,7 +4,7 @@ export default function ManageDoctors() {
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {
     axios
-      .get("backend-update-production.up.railway.app/api/doctors")
+      .get("https://backend-update-production.up.railway.app/api/doctors")
       .then(function (response) {
         console.log("response: ", response.data);
         setDoctors(response.data);
