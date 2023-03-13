@@ -4,7 +4,7 @@ export default function ManageDoctors() {
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {
     axios
-      .get("https://rihal-be.herokuapp.com/api/doctors")
+      .get("backend-update-production.up.railway.app/api/doctors")
       .then(function (response) {
         console.log("response: ", response.data);
         setDoctors(response.data);
