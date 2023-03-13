@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-sm {
+  border: 1px whitesmoke solid;
+}
+
+.ml-sm {
+  margin-left: 10px;
+}
